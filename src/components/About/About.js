@@ -27,7 +27,7 @@ const About = () => {
       <p className='about__desc'>{description && description}</p>
       <div className='about__contact center'>
         {resume && (
-          <a href={resume}>
+          <a href='/Guevara_Jordan_Resume.pdf' target='_blank'>
             <span type='button' className='btn btn--outline'>
               Resume
             </span>
@@ -39,6 +39,8 @@ const About = () => {
             {social.github && (
               <a
               href={social.github}
+              target='_blank'
+              rel='noreferrer'
               aria-label='github'
               className='link link--icon first--link'
               >
@@ -49,6 +51,8 @@ const About = () => {
             {social.linkedin && (
               <a
               href={social.linkedin}
+              target='_blank'
+              rel='noreferrer'
               aria-label='linkedin'
               className='link link--icon'
               >
@@ -59,6 +63,8 @@ const About = () => {
             {social.angellist && (
               <a
               href={social.angellist}
+              target='_blank'
+              rel='noreferrer'
               aria-label='angellist'
               className='link link--icon'
               >

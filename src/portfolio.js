@@ -16,7 +16,6 @@ import {
   SiHeroku, } 
   from 'react-icons/si'
 
-
 const header = {
   homepage: 'https://github.com/Jguevara1208?tab=repositories',
   title: 'JG.',
