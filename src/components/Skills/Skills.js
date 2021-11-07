@@ -1,11 +1,17 @@
+import { useEffect } from 'react'
 import { skills } from '../../portfolio'
 import './Skills.css'
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 const Skills = () => {
-  if (!skills.length) return null
+
+  useEffect(() => {
+    Aos.init({ duration: 1500 })
+  }, [])
 
   return (
-    <section className='section skills' id='skills'>
+    <section data-aos='fade-up-left' className='section skills' id='skills'>
       <h2 className='section__title'>Skills</h2>
       <ul className='skills__list'>
         {skills.map((skill, index) => (

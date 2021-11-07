@@ -1,10 +1,12 @@
 import { ThemeContext } from '../../contexts/theme';
-import { useContext, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import { projects, skills, contact } from '../../portfolio';
 import Brightness2Icon from '@material-ui/icons/Brightness2'
 import WbSunnyRoundedIcon from '@material-ui/icons/WbSunnyRounded';
 import MenuIcon from '@material-ui/icons/Menu';
 import CloseIcon from '@material-ui/icons/Close';
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 import './Navbar.css';
 
 const Navbar = () => {
@@ -13,8 +15,12 @@ const Navbar = () => {
 
   const toggleNavList = () => setShowNavList(!showNavList)
 
+  useEffect(() => {
+    Aos.init({ duration: 1500 })
+  }, [])
+
   return (
-    <nav className='center nav'>
+    <nav data-aos='fade-right' className='center nav'>
       <ul
         style={{ display: showNavList ? 'flex' : null }}
         className='nav__list'

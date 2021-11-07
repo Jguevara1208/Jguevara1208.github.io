@@ -1,12 +1,17 @@
+import { useEffect } from 'react'
 import { projects } from '../../portfolio'
 import ProjectContainer from '../ProjectContainer/ProjectContainer'
 import './Projects.css'
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 const Projects = () => {
-  if (!projects.length) return null
+  useEffect(() => {
+    Aos.init({ duration: 1500 })
+  }, [])
 
   return (
-    <section id='projects' className='section projects'>
+    <section data-aos='fade-up-right' id='projects' className='section projects'>
       <h2 className='section__title'>Projects</h2>
 
       <div className='projects__grid'>

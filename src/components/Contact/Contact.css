@@ -2,3 +2,10 @@
   flex-direction: column;
   margin-bottom: 15em;
 }
+
+.say-hello {
+  width: 50%;
+  margin-top: -20px;
+  margin-bottom: 40px;
+  text-align: center;
+}
