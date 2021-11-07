@@ -7,7 +7,7 @@ import { useEffect } from 'react'
 const Contact = () => {
 
   useEffect(() => {
-    Aos.init({ duration: 1500 })
+    Aos.init({ duration: 1500, once: true})
   }, [])
 
   return (
