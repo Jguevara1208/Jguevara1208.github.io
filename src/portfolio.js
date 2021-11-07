@@ -1,3 +1,22 @@
+import { 
+  SiJavascript, 
+  SiReact, 
+  SiRedux, 
+  SiNodedotjs, 
+  SiSequelize, 
+  SiExpress, 
+  SiPython, 
+  SiFlask, 
+  SiPostgresql, 
+  SiHtml5, 
+  SiCss3, 
+  SiGit, 
+  SiDocker, 
+  SiAmazonaws, 
+  SiHeroku, } 
+  from 'react-icons/si'
+
+
 const header = {
   homepage: 'https://github.com/Jguevara1208?tab=repositories',
   title: 'JG.',
@@ -63,22 +82,21 @@ const projects = [
 ]
 
 const skills = [
-  'JavaScript',
-  'React.js',
-  'Redux',
-  'Node.js',
-  'Sequelize',
-  'Express',
-  'Python',
-  'SQLAlchemy',
-  'Flask',
-  'PSQL',
-  'HTML5',
-  'CSS3',
-  'Git',
-  'Docker',
-  'AWS',
-  'Heroku'
+  { type: 'JavaScript', logo: <SiJavascript className='skills__icon' />, percent: 100},
+  { type: 'React.js', logo: <SiReact className='skills__icon' />, percent: 100},
+  { type: 'Redux', logo: <SiRedux className='skills__icon' />, percent: 100},
+  { type: 'Node.js', logo: <SiNodedotjs className='skills__icon' />, percent: 100},
+  { type: 'Sequelize', logo: <SiSequelize className='skills__icon' />, percent: 80},
+  { type: 'Express', logo: <SiExpress className='skills__icon' />, percent: 85},
+  { type: 'Python', logo: <SiPython className='skills__icon' />, percent: 85},
+  { type: 'Flask', logo: <SiFlask className='skills__icon' />, percent: 75},
+  { type: 'PostgreSQL', logo: <SiPostgresql className='skills__icon' />, percent: 80},
+  { type: 'HTML5', logo: <SiHtml5 className='skills__icon' />, percent: 90},
+  { type: 'CSS3', logo: <SiCss3 className='skills__icon' />, percent: 90},
+  { type: 'Git', logo: <SiGit className='skills__icon' />, percent: 80},
+  { type: 'Docker', logo: <SiDocker className='skills__icon' />, percent: 70},
+  { type: 'AWS', logo: <SiAmazonaws className='skills__icon' />, percent: 50},
+  { type: 'Heroku', logo: <SiHeroku className='skills__icon' />, percent: 60}
 ]
 
 const contact = {

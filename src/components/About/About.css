@@ -1,22 +1,12 @@
 .about {
   flex-direction: column;
+  justify-content: center;
   margin-top: 3em;
-}
-
-.avatar {
-  border-radius: 5px;
-  width: 250px;
-  margin-top: 20px;
-  box-shadow: var(--shadow);
-  transition: transform 0.2s linear;
+  height: 83vh;
 }
 
 .first--link {
   margin-left: 20px;
-}
-
-.avatar:hover {
-  transform: translateY(-7px);
 }
 
 .about__name {

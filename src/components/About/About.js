@@ -18,8 +18,6 @@ const About = () => {
 
       {role && <h2 className='about__role'>A {role}.</h2>}
       <p className='about__desc'>{description && description}</p>
-
-      <img className='avatar' src="https://cdn.discordapp.com/attachments/906292935765667874/906301075903119370/IMG_4244.jpeg" alt="jordan guevara avatar" />
       <div className='about__contact center'>
         {resume && (
           <a href={resume}>
